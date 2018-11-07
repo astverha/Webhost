@@ -5,10 +5,18 @@
     "http://example.org/d": "http://example.org/e"
 }]
 </script>
+
 <script type="application/ld+json">
 [{  
     "@id": "http://example.org/f",
     "http://example.org/g": "http://example.org/h",
     "http://example.org/i": "http://example.org/j"
 }]
+</script>
+
+<script type="application/n-quads">
+    <http://one.example/subject1> <http://one.example/predicate1> <http://one.example/object1> <http://example.org/graph3> . # comments here
+    # or on a line by themselves
+    _:subject1 <http://an.example/predicate1> "object1" <http://example.org/graph1> .
+    _:subject2 <http://an.example/predicate2> "object2" <http://example.org/graph5> .
 </script>
