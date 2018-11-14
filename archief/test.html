@@ -15,21 +15,18 @@
 </script>
 
 <script type="application/n-quads">
-    <http://one.example/subject1> <http://one.example/predicate1> <http://one.example/object1> <http://example.org/graph3> . # comments here
-    # or on a line by themselves
-    _:subject1a <http://an.example/predicate1> "object1" <http://example.org/graph1> .
-    _:subject2b <http://an.example/predicate2> "object2" <http://example.org/graph5> .
+    <http://one.example/subjecta> <http://one.example/predicatea> <http://one.example/objecta> <http://example.org/grapha> .
+    _:subject1a <http://an.example/predicatea> "objecta" <http://example.org/grapha> .
+    _:subject2b <http://an.example/predicateb> "objectb" <http://example.org/graphb> .
 </script>
 
 <script type="application/n-triples">
-    <http://one.example/subject1> <http://one.example/predicate1> <http://one.example/object1> . # comments here
-    # or on a line by themselves
-    _:subject1c <http://an.example/predicate1> "object1" .
-    _:subject2d <http://an.example/predicate2> "object2" .
+    <http://one.example/subjectc> <http://one.example/predicatec> <http://one.example/objectc> .
+    _:subject1c <http://an.example/predicatec> "objectc" .
+    _:subject2d <http://an.example/predicated> "objectd" .
 </script>
 
 <script type="application/trig">
-    # This document encodes one graph.
     @prefix ex: <http://www.example.org/vocabulary#> .
     @prefix : <http://www.example.org/exampleDocument#> .
 
@@ -50,7 +47,7 @@
 </script>
 
 <script type="text/turtle">
-     @base <http://example.org/> .
+    @base <http://example.org/> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
     @prefix foaf: <http://xmlns.com/foaf/0.1/> .
